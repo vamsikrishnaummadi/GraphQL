@@ -1,11 +1,13 @@
 import {ApolloServer} from "@apollo/server";
 import {startStandaloneServer} from "@apollo/server/standalone";
+import { graphql } from "graphql";
 
 const typeDefs = `#graphql
    type Query {
       greeting : String
    }
 `;
+
 
 const resolvers = {
     Query : {
